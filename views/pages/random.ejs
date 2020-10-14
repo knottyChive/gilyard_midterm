@@ -7,11 +7,24 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 
     <title>Random Comic</title>
   </head>
   <body>
-    <h1>Random Comic</h1>
+    <%- include('../partials/header', { page: 'Random' }) %> 
+
+    <div class="container">
+      <h2 class="display-3 text-center">Random Comic</h2>
+      <h4><%= random.title %> </h4>
+      <div class="card">
+        <img src="<%= random.image %> " alt="<%= random.alt %>" class="img-thumbnail h-75" width="100%" height="100vh">
+        <h6 class="card-subtitle m-2 text-muted"><%= random.month  %>/<%= random.day %>/<%= random.year %>   </h6>
+        <p class="card-text m-2"><%= random.alt %> </p>
+      </div>
+    </div>
+    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

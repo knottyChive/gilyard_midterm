@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap');
+
+p, span, a, button {
+    font-family: 'Lato', sans-serif;
+}
+
+h3, h4, h5, h6, a {
+    font-family: 'Staatliches', cursive;
+}
+
+.display-3 {
+    background-color: crimson;
+    color: gainsboro;
+    font-family: 'Staatliches', cursive;
+}
+
+#nav-highlight {
+    
+    transition: all 1s;
+}
+
+#nav-highlight:hover {
+    padding-left: 5px;
+    color: white;
+    background: linear-gradient(to left, #51eebc, rgb(80, 81, 141))
+}
